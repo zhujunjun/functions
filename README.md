@@ -23,3 +23,11 @@
      ![百科公示](http://gcsblog.oss-cn-shanghai.aliyuncs.com/blog/2019-04-29-071106.jpg?gcssloop) 
 + 在常见的数学坐标系中角度增大方向为逆时针，在默认的屏幕坐标系中角度增大方向为顺时针。
      + ![角度方向](http://gcsblog.oss-cn-shanghai.aliyuncs.com/blog/2019-04-29-71107.jpg?gcssloop)
++ 在drawArc中 startAngle 是弧形的起始角度 sweepAngle 是弧形划过的角度
+      ![示意图](https://www.pianshen.com/images/743/a76d4e7cf43074e813f696d49cfb4d9f.png)
+    + 以这张图为例  startAngle的角度是从x轴的右侧开始为0度 也就是说 当我们给定startAngle角度为90度时，那么他就是从图上90度的地方开始画 
+    + sweepAngle其实就是所画的弧度范围  打个比方 我们startAngle为90 sweepAngle 为100
+      ![示意图](https://www.pianshen.com/images/14/7f8dbd977ce128e57e7ded4310960dfe.png)
+    + 那么绘制的形状就是图上黄色区域部分（以连接到圆心为例）  这里要说一下 sweepAngle为100度 也就是从起始角度开始
+    + 顺时针画100度 这也就是说 sweepAngle的0度位置其实就是startAngle的位置 ，以下图为例sweepAngle的0度就是startAngle的起始角度所以 从这个角度开始顺时针画100度，那么就是这个形状了
+      ![示意图](https://www.pianshen.com/images/623/fc3329dd43b13c0712851879d09ff617.png)
