@@ -31,3 +31,5 @@
     + 那么绘制的形状就是图上黄色区域部分（以连接到圆心为例）  这里要说一下 sweepAngle为100度 也就是从起始角度开始
     + 顺时针画100度 这也就是说 sweepAngle的0度位置其实就是startAngle的位置 ，以下图为例sweepAngle的0度就是startAngle的起始角度所以 从这个角度开始顺时针画100度，那么就是这个形状了
       ![示意图](https://www.pianshen.com/images/623/fc3329dd43b13c0712851879d09ff617.png)
+ + Spannable对象 设置textview的各种样式(https://www.cnblogs.com/tianzhijiexian/p/4222393.html)
+ + Android ADB 命令大全(https://github.com/mzlogin/awesome-adb/)
