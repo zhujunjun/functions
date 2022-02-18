@@ -33,3 +33,18 @@
       ![示意图](https://www.pianshen.com/images/623/fc3329dd43b13c0712851879d09ff617.png)
  + Spannable对象 设置textview的各种样式(https://www.cnblogs.com/tianzhijiexian/p/4222393.html)
  + Android ADB 命令大全(https://github.com/mzlogin/awesome-adb/)
+ + 屏幕适配基础知识
+     + px和dp的换算公式：px = dp * (dpi / 160)；dpi 指密度。密度与手机尺寸和分辨率有关
+     + dpi划分范围![示意图](https://img-blog.csdn.net/20180115112146558?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvbTBfMzc4MjgyNDk=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
+     + 不通密度大小的位图的相对尺寸![示意图](https://developer.android.com/images/screens_support/devices-density_2x.png?hl=zh-cn)
+     + 要针对不同的密度创建备用可绘制位图资源，您应遵循六种主要密度之间的 3:4:6:8:12:16 缩放比。例如，如果您有一个可绘制位图资源，它在中密度屏幕上的大小为 48x48 像素，那么它在其他各种密度的屏幕上的大小应该为：
+       + 36x36 (0.75x) - 低密度 (ldpi)
+       + 48x48（1.0x 基准）- 中密度 (mdpi)
+       + 72x72 (1.5x) - 高密度 (hdpi)
+       + 96x96 (2.0x) - 超高密度 (xhdpi)
+       + 144x144 (3.0x) - 超超高密度 (xxhdpi)
+       + 192x192 (4.0x) - 超超超高密度 (xxxhdpi)
+     + sp 定义：根据字体首选项进行缩放
+     + sp绝大部分都是用来设置文字大小的大小.
+     + google开发指导手册上推荐我们设置12sp以上大小的单位，不要用12sp以下，以为用户可能看不清。推荐使用大小有12sp、14sp、18sp和22sp作为我们首选的字体大小。
+
