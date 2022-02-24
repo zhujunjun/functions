@@ -47,4 +47,7 @@
      + sp 定义：根据字体首选项进行缩放
      + sp绝大部分都是用来设置文字大小的大小.
      + google开发指导手册上推荐我们设置12sp以上大小的单位，不要用12sp以下，以为用户可能看不清。推荐使用大小有12sp、14sp、18sp和22sp作为我们首选的字体大小。
+  + Android嵌套webview时，软键盘挡住输入框问题，完美解决，兼容各机型(https://blog.csdn.net/professionIT/article/details/86488977)
+  + 最全的Android 颜色透明度(https://blog.csdn.net/hewuzhao/article/details/78821954)
+     + 
 
